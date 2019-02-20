@@ -13,9 +13,12 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        serverwidget.cpp
+        serverwidget.cpp \
+    clientwidget.cpp
 
-HEADERS  += serverwidget.h
+HEADERS  += serverwidget.h \
+    clientwidget.h
 
-FORMS    += serverwidget.ui
+FORMS    += serverwidget.ui \
+    clientwidget.ui
 CONFIG      +=C++11
