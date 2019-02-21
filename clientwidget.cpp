@@ -16,10 +16,10 @@ ClientWidget::ClientWidget(QWidget *parent) :
         {
             isStart=false;
             fileName=QString(buf).section("##",0,0);
-            fileSize==QString(buf).section("##",1,1).toInt();
+            fileSize=QString(buf).section("##",1,1).toInt();
             recvSize=0;
 
-            file.setFileName(QString(fileName));
+            file.setFileName(fileName);
             bool isOk=file.open(QIODevice::WriteOnly);
             if(false==isOk)
             {
